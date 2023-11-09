@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;700&display=swap');html{
+    scroll-behavior: smooth;
+}
+
+.header {
+    height: 80px;
+    background: #0E141FE0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-family: "Rubik";
+    z-index: 1;
+}
+.header__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFFB5;
+    margin-left: 175px;
+}
+.form {
+    display: flex;
+    margin-right: 181px;
+    align-items: center;
+}
+.form__search {
+    margin-right: 47px;
+    input{
+        width: 271px;
+        height: 43px;
+        background-color: #D9D9D9;
+        background: url("../images/index/search.png") no-repeat;
+        background-position: right;
+        border-radius: 12px;
+        
+    }
+
+}
+.form__menu {
+    input{
+        position: absolute;
+        visibility: hidden;
+    }
+}
+
+.form__checkbox:checked ~ .menu-list{
+    transform: translateY(0);
+    top: 80px;
+}
+.menu-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+    width: 440px;
+    height: 395px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, #141923, #141923);
+    span{
+
+        color: #FFFFFFBD;
+    }
+    font-size: 24px;
+    font-weight: 700;
+
+}
+.form__checkbox-label{
+    cursor: pointer;
+}
+
+%mess{
+    display: inline-flex;
+    align-items: end;
+    gap: 10px;
+    max-width: 473px;
+
+    .message__username {
+        color: #9BA6B9F0;
+        font-size: 20px;
+        font-weight: 500;
+
+    }
+
+    .message__content{
+        display: inline-block;
+        background: #454A52;
+        padding: 12px;
+        border-radius: 10px 10px 10px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .message__text {
+        color: #E7E7E7F7;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .message__date {
+        color: #D8D5FF82;
+
+    }
+
+    img{
+        width: 45px;
+        height: 45px;
+    }
+
+}
+
+.container {
+    background: url("../images/chat-admin/background.png");
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+    font-family: "Roboto";
+    .chat {
+        position: relative;
+        width: 882px;
+        height: 100vh;
+        margin: 0 auto;
+        padding-top: 80px;
+        backdrop-filter: blur(10px);
+        background: #C5C5C575;
+        overflow: auto;
+
+        .chat__header {
+            background: #9BA4B5;
+            height: 140px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding-left: 36px;
+            position: fixed;
+            top: 80px;
+            left: 0;
+
+            .user {
+                display: flex;
+                align-items: center;
+                gap: 25px;
+
+                .user-name {
+                    font-family: "Rubik";
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+        }
+        .chat__dialog {
+            // &::-webkit-scrollbar{
+            //     width: 10px;
+            // }
+            width: 660px;
+            height: calc(100% - 140px - 160px);
+            margin: 140px auto;
+            display: flex;
+            justify-content: end;
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+}
+.message {
+    @extend %mess;
+    
+}
+
+
+
+
+.my-message {
+    @extend %mess;
+    align-self: end;
+    border-radius: 10px 10px 0 10px;
+    .message__content{
+        background: #324466;
+        border-radius: 10px 10px 0px 10px;
+    }
+
+}
+.chat__input {
+    background: #9BA4B5;
+    width: 660px;
+    height: 58px;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 80px;
+    left:calc(50% - 330px);
+    border-radius: 5px;
+    
+    input{
+        background: #9BA4B5;
+        height: 100%;
+        margin-left: 22px;
+        width: calc(100% - 22px);
+        border-radius: 5px;
+
+        &::placeholder{
+            font-size: 20px;
+            color: #1419239E;
+        }
+    }
+
+}

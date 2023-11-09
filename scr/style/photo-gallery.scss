@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@400;700&display=swap');
+
+.header {
+    height: 80px;
+    background: #0E141FE0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.header__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFFB5;
+    margin-left: 175px;
+}
+.form {
+    display: flex;
+    margin-right: 181px;
+    align-items: center;
+}
+.form__search {
+    margin-right: 47px;
+    input{
+        width: 271px;
+        height: 43px;
+        background-color: #D9D9D9;
+        background: url("../images/index/search.png") no-repeat;
+        background-position: right;
+        border-radius: 12px;
+        
+    }
+
+}
+.form__menu {
+    input{
+        position: absolute;
+        visibility: hidden;
+    }
+}
+
+.form__checkbox:checked ~ .menu-list{
+    transform: translateY(0);
+    top: 80px;
+}
+.menu-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+    width: 440px;
+    height: 395px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, #141923, #141923);
+    span{
+
+        color: #FFFFFFBD;
+    }
+    font-size: 24px;
+    font-weight: 700;
+
+}
+.form__checkbox-label{
+    cursor: pointer;
+}
+
+body{
+    background-color: #141923;
+    color: #FFFFFF;
+}
+
+.conteiner {
+    width: 1160px;
+    height: 100%;
+    margin: 120px auto;
+    position: relative;
+
+
+    .container__header {
+        margin-top: 43px;
+        display: flex;
+        justify-content: space-between;
+
+        .container__title {
+            font-size: 64px;
+            font-weight: 700;
+            font-family: "Rubik";
+        }
+
+        .container__button {
+            text-align: center;
+            font-family: Roboto;
+            a{
+                display: inline-block;
+                width: 160px;
+                height: 60px;
+                background: #6A963E;
+                border-radius: 10px;
+            }
+            span{
+                color: #FFFFFF;
+                line-height: 60px;
+                font-size: 20px;
+            }
+        }
+    }
+    .photo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        img{
+            margin-top: 43px;
+        }
+    }
+
+    .container__navigation {
+        height: 181px;
+        position: fixed;
+        top: 50%;
+        right: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

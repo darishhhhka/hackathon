@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@400;700&display=swap");
+body {
+  max-width: 2073px;
+  height: 100vh;
+  font-family: "Rubik";
+  color: #FFFFFF;
+  background-color: #141923;
+  list-style-type: none;
+}
+
+.header {
+  height: 80px;
+  background: rgba(14, 20, 31, 0.8784313725);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7098039216);
+  margin-left: 175px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 181px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__search {
+  margin-right: 47px;
+}
+.form__search input {
+  width: 271px;
+  height: 43px;
+  background-color: #D9D9D9;
+  background: url("../images/index/search.png") no-repeat;
+  background-position: right;
+  border-radius: 12px;
+}
+
+.form__menu input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.form__checkbox:checked ~ .menu-list {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  top: 80px;
+}
+
+.menu-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  width: 440px;
+  height: 395px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 50px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, left bottom, left top, from(#141923), to(#141923));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, #141923, #141923);
+  font-size: 24px;
+  font-weight: 700;
+}
+.menu-list span {
+  color: rgba(255, 255, 255, 0.7411764706);
+}
+
+.form__checkbox-label {
+  cursor: pointer;
+}
+
+.register {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.regicter__form {
+  width: 375px;
+  height: 446px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 126px;
+}
+.regicter__form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.regicter__form h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.regicter__form .input {
+  width: 375.4px;
+  height: 54.23px;
+  border-radius: 4px;
+  background: #9BA4B5;
+  margin-top: 36px;
+}
+.regicter__form .input input {
+  width: calc(100% - 20px);
+  height: 100%;
+  background: #9BA4B5;
+  margin-left: 13px;
+}
+.regicter__form .input input::-webkit-input-placeholder {
+  color: rgba(20, 25, 35, 0.6196078431);
+  font-size: 20px;
+}
+.regicter__form .input input::-moz-placeholder {
+  color: rgba(20, 25, 35, 0.6196078431);
+  font-size: 20px;
+}
+.regicter__form .input input:-ms-input-placeholder {
+  color: rgba(20, 25, 35, 0.6196078431);
+  font-size: 20px;
+}
+.regicter__form .input input::-ms-input-placeholder {
+  color: rgba(20, 25, 35, 0.6196078431);
+  font-size: 20px;
+}
+.regicter__form .input input::placeholder {
+  color: rgba(20, 25, 35, 0.6196078431);
+  font-size: 20px;
+}
+.regicter__form .register__continue {
+  margin-top: 36px;
+  display: block;
+  width: 200px;
+  height: 60px;
+  background-color: #6A963E;
+  border-radius: 10px;
+}
+.regicter__form .register__continue span {
+  color: #FFFFFF;
+  line-height: 60px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: 36px;
+}
+.subtitle p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5215686275);
+}
+.subtitle .register__input span {
+  font-weight: 700px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+}

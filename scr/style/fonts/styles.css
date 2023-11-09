@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'RedRose-Bold';
+  src: url(./RedRose-Bold.eot);
+  src: url(./RedRose-Bold.eot?#iefix) format('embedded-opentype'),
+       url(./RedRose-Bold.ttf) format('truetype'),
+       url(./RedRose-Bold.svg#RedRose-Bold) format('svg'),
+       url(./RedRose-Bold.woff2) format('woff2'),
+       url(./RedRose-Bold.otf) format('otf');
+}

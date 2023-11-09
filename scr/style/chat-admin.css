@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  height: 80px;
+  background: rgba(14, 20, 31, 0.8784313725);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-family: "Rubik";
+  z-index: 1;
+}
+
+.header__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7098039216);
+  margin-left: 175px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 181px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__search {
+  margin-right: 47px;
+}
+.form__search input {
+  width: 271px;
+  height: 43px;
+  background-color: #D9D9D9;
+  background: url("../images/index/search.png") no-repeat;
+  background-position: right;
+  border-radius: 12px;
+}
+
+.form__menu input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.form__checkbox:checked ~ .menu-list {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  top: 80px;
+}
+
+.menu-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  width: 440px;
+  height: 395px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 50px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, left bottom, left top, from(#141923), to(#141923));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, #141923, #141923);
+  font-size: 24px;
+  font-weight: 700;
+}
+.menu-list span {
+  color: rgba(255, 255, 255, 0.7411764706);
+}
+
+.form__checkbox-label {
+  cursor: pointer;
+}
+
+.my-message, .message {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  gap: 10px;
+  max-width: 473px;
+}
+.my-message .message__username, .message .message__username {
+  color: rgba(155, 166, 185, 0.9411764706);
+  font-size: 20px;
+  font-weight: 500;
+}
+.my-message .message__content, .message .message__content {
+  display: inline-block;
+  background: #454A52;
+  padding: 12px;
+  border-radius: 10px 10px 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 7px;
+}
+.my-message .message__text, .message .message__text {
+  color: rgba(231, 231, 231, 0.968627451);
+  font-size: 20px;
+  line-height: 26px;
+}
+.my-message .message__date, .message .message__date {
+  color: rgba(216, 213, 255, 0.5098039216);
+}
+.my-message img, .message img {
+  width: 45px;
+  height: 45px;
+}
+
+.container {
+  background: url("../images/chat-admin/background.png");
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+  font-family: "Roboto";
+}
+.container .chat {
+  position: relative;
+  width: 882px;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 80px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background: rgba(197, 197, 197, 0.4588235294);
+  overflow: auto;
+}
+.container .chat .chat__header {
+  background: #9BA4B5;
+  height: 140px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  padding-left: 36px;
+  position: fixed;
+  top: 80px;
+  left: 0;
+}
+.container .chat .chat__header .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+.container .chat .chat__header .user .user-name {
+  font-family: "Rubik";
+  font-size: 24px;
+  font-weight: 700;
+}
+.container .chat .chat__dialog {
+  width: 660px;
+  height: calc(100% - 140px - 160px);
+  margin: 140px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+
+.my-message {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  border-radius: 10px 10px 0 10px;
+}
+.my-message .message__content {
+  background: #324466;
+  border-radius: 10px 10px 0px 10px;
+}
+
+.chat__input {
+  background: #9BA4B5;
+  width: 660px;
+  height: 58px;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 80px;
+  left: calc(50% - 330px);
+  border-radius: 5px;
+}
+.chat__input input {
+  background: #9BA4B5;
+  height: 100%;
+  margin-left: 22px;
+  width: calc(100% - 22px);
+  border-radius: 5px;
+}
+.chat__input input::-webkit-input-placeholder {
+  font-size: 20px;
+  color: rgba(20, 25, 35, 0.6196078431);
+}
+.chat__input input::-moz-placeholder {
+  font-size: 20px;
+  color: rgba(20, 25, 35, 0.6196078431);
+}
+.chat__input input:-ms-input-placeholder {
+  font-size: 20px;
+  color: rgba(20, 25, 35, 0.6196078431);
+}
+.chat__input input::-ms-input-placeholder {
+  font-size: 20px;
+  color: rgba(20, 25, 35, 0.6196078431);
+}
+.chat__input input::placeholder {
+  font-size: 20px;
+  color: rgba(20, 25, 35, 0.6196078431);
+}

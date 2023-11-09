@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@400;700&display=swap');
+
+.header {
+    height: 80px;
+    background: #0E141FE0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    font-family: "Rubik";
+}
+.header__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFFB5;
+    margin-left: 175px;
+}
+.form {
+    display: flex;
+    margin-right: 181px;
+    align-items: center;
+}
+.form__search {
+    margin-right: 47px;
+    input{
+        width: 271px;
+        height: 43px;
+        background-color: #D9D9D9;
+        background: url("../images/index/search.png") no-repeat;
+        background-position: right;
+        border-radius: 12px;
+        
+    }
+
+}
+.form__menu {
+    input{
+        position: absolute;
+        visibility: hidden;
+    }
+}
+
+.form__checkbox:checked ~ .menu-list{
+    transform: translateY(0);
+    top: 80px;
+}
+.menu-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+    width: 440px;
+    height: 395px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, #141923, #141923);
+    span{
+
+        color: #FFFFFFBD;
+    }
+    font-size: 24px;
+    font-weight: 700;
+
+}
+.form__checkbox-label{
+    cursor: pointer;
+}
+.content{
+    background: url("../images/chats/background.png") no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    font-family: "Roboto";
+}
+
+.container {
+    max-width: 1160px;
+    height: 100vh;
+    padding-top: 80px;
+    margin: 0 auto;
+    background: #C5C5C575;
+    overflow: auto;
+    backdrop-filter: blur(10px);
+    &::-webkit-scrollbar{
+        width: 0;
+    }
+
+
+    .container__search {
+        width: 100%;
+        height: 100px;
+        
+        
+
+        .container__input{
+            width: 1077px;
+            height: 69px;
+            background: #e1e2e8;
+            border-radius: 5px;
+            margin: 21px auto;
+            border: 1px solid #FFFFFFB2;
+            
+            &::after{
+                content: url("../images/chats/lupa.png");
+                position: absolute;
+                right: 63px;
+                top:123px
+            }
+            input{
+                width:calc(100% - 110px);
+                margin:0 55px 0 55px;
+                height: 100%;
+                background:#e1e2e8;
+                
+                &::placeholder{
+                    color: #00000080;
+                    font-size: 20px;
+                    
+                }
+            
+            }
+        }
+
+    }
+    .chats {
+        background-color: #D3E0FF69;
+    }
+    .chat__message {
+        width: 100%;
+        height: 148px;
+        border-bottom: 1px solid #FFFFFFB2;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .chat__info {
+            width: 848px;
+            font-size: 32px;
+            text-align: left;
+            margin: 23px 0 23px 0;
+            color: #0F151F;
+
+
+            .chat__user {
+                font-weight: 700;
+                margin-bottom: 23px;
+            }
+
+            .chat__previev-message {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+.chat__icon {
+}
+

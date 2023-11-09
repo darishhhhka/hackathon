@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@400;700&display=swap");
+.header {
+  height: 80px;
+  background: rgba(14, 20, 31, 0.8784313725);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header__title {
+  font-family: "Rubik";
+  font-size: 32px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7098039216);
+  margin-left: 175px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 181px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__search {
+  margin-right: 47px;
+}
+.form__search input {
+  width: 271px;
+  height: 43px;
+  background-color: #D9D9D9;
+  background: url("../images/index/search.png") no-repeat;
+  background-position: right;
+  border-radius: 12px;
+}
+
+body {
+  background-color: #141923;
+  color: #FFFFFF;
+  font-family: "Roboto";
+}
+
+.where-to-go {
+  margin: 120px auto;
+  width: 1154px;
+}
+.where-to-go .where-to-go__content {
+  margin-top: 60px;
+}
+.where-to-go .where-to-go__title {
+  font-family: "Rubik";
+  font-size: 64px;
+}
+.where-to-go .where-to-go__title h1 {
+  font-weight: 700;
+}
+.where-to-go .info {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.09em;
+  text-align: left;
+  width: 467px;
+}
+.where-to-go .info h2 {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.where-to-go .info p {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8117647059);
+}
+.where-to-go .info .info__paragraf-second {
+  margin-top: 30px;
+}
+.where-to-go .where-to-go__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px;
+}

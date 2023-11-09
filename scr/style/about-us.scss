@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@400;700&display=swap');
+body{
+    width: 100%;
+    font-family: "Rubik";
+    color: #FFFFFF;
+    background-color: #141923;
+    list-style-type: none; 
+}
+.header {
+    height: 80px;
+    background: #0E141FE0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.header__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFFB5;
+    margin-left: 175px;
+}
+.form {
+    display: flex;
+    margin-right: 181px;
+    align-items: center;
+}
+.form__search {
+    margin-right: 47px;
+    input{
+        width: 271px;
+        height: 43px;
+        background-color: #D9D9D9;
+        background: url("../images/index/search.png") no-repeat;
+        background-position: right;
+        border-radius: 12px;
+        
+    }
+
+}
+.form__menu {
+    input{
+        position: absolute;
+        visibility: hidden;
+    }
+}
+
+.form__checkbox:checked ~ .menu-list{
+    transform: translateY(0);
+    top: 80px;
+}
+.menu-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+    width: 440px;
+    height: 395px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, #141923, #141923);
+    span{
+
+        color: #FFFFFFBD;
+    }
+    font-size: 24px;
+    font-weight: 700;
+
+}
+.form__checkbox-label{
+    cursor: pointer;
+}
+
+.about-us {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 712px;
+}
+
+.about-us__content{
+    height: 568px;
+    width: 1160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-us__inform{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-us__title{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+.about-us__text {
+    height: 100%;
+    width: 518px;
+    height: 531px;
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    color: #FFFFFFC7;
+    h2{
+        font-size: 64px;
+        font-weight: 700;
+    }
+
+}
+.about-us__text_first {
+    margin-bottom: 20px;
+}
+
+.history {
+    margin-top: 82px;
+    display: flex;
+    justify-content: center;
+}
+.history__content {
+    border-top: 4px solid #FFFFFF2E;
+    padding-top: 35px;
+    h3{
+    font-size: 64px;
+    font-weight: 700;
+    }
+    width: 1160px;
+    height: 604px;
+}
+
+.history__text{
+    margin-top: 38px;
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.035em;
+    color:  #FFFFFFC7;
+
+    p{
+        margin-bottom: 40px;
+    }
+}
+
+
+.social-network {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+.social-network__content {
+    border-top: 4px solid #FFFFFF2E;
+    padding-top: 29px;
+    h3 {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 80px;
+    }
+    width: 1160px;
+    height: 436px;
+}
+.social-network__network {
+    margin-top: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.staff {
+    margin-top: 43px;
+    display: flex;
+    justify-content: center;
+}
+.staff__content {
+    padding-top: 52px;
+    border-top: 4px solid #FFFFFF2E;
+    width: 1160px;
+    height: 1163px;
+    h3{
+        font-size: 64px;
+        font-weight: 700;
+    }
+}
+.staff__info {
+    display: flex;
+    flex-direction: column;
+}
+.stuff__block {
+    margin-bottom: 69px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        width: 560px;
+        height: 186px;
+        font-family: Roboto;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.035em;
+        color: #FFFFFFC7;
+    }
+}
+.stuff__block2 {
+}
