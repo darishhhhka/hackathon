@@ -170,7 +170,14 @@ body{
 .message {
    @extend %mes;
 }
-
+.message__content {
+}
+.message__username {
+}
+.message__text {
+}
+.message__date {
+}
 .message-forwarded {
     &::before{
         content: '';
