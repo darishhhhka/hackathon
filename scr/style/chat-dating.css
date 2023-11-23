@@ -24,6 +24,9 @@
   color: rgba(255, 255, 255, 0.7098039216);
   margin-left: 175px;
 }
+.header__title span {
+  color: rgba(255, 255, 255, 0.7098039216);
+}
 
 .form {
   display: -webkit-box;
@@ -218,20 +221,15 @@ body {
   background: #324466;
 }
 
-.chat__input {
+.chat__input input {
   width: 660px;
   height: 58px;
+  padding-left: 22px;
   background: #9BA4B5;
   position: fixed;
   bottom: 80px;
-  left: calc(50% - 330px);
   border-radius: 4px;
-}
-.chat__input input {
-  width: calc(100% - 30px);
-  margin-left: 22px;
-  height: 100%;
-  background: #9BA4B5;
+  left: calc(50% - 330px);
 }
 .chat__input input::-webkit-input-placeholder {
   font-size: 20px;

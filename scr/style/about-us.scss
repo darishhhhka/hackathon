@@ -18,9 +18,11 @@ body{
     left: 0;
 }
 .header__title {
+    span{
+        color: #FFFFFFB5;
+    }
     font-size: 32px;
     font-weight: 700;
-    color: #FFFFFFB5;
     margin-left: 175px;
 }
 .form {

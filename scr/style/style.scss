@@ -6,7 +6,7 @@ html{
 
 .header {
     height: 80px;
-    background: #0E141FE0;
+    background: #0E141F;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,6 +16,9 @@ html{
     left: 0;
 }
 .header__title {
+    span{
+        color: #FFFFFFB5;
+    }
     font-size: 32px;
     font-weight: 700;
     color: #FFFFFFB5;
@@ -92,7 +95,7 @@ body{
 }
 
 .welcom {
-    height: 1000px;
+    height: 100vh;
     width: 100%;
     background: url("../images/index/house.png") no-repeat;
     display: flex;
@@ -239,9 +242,7 @@ body{
     background-position: center center;
 }
 
-.menu__text{
-    
-}
+
 
 .menu__title {
     font-size: 48px;
@@ -543,60 +544,43 @@ body{
 }
 
 
+
 .footer {
     width: 100%;
-    height: 456px;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    margin-top: 134px;
+    gap: 87px;
+
 }
 .footer__container {
-    margin-top: 55px;
-    width: 1160px;
-    height: 224px;
+    max-width: 1160px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
-
 .footer__menu {
-    width: 209.29px;
-    height: 212px;
-    font-family: Roboto;
     font-size: 20px;
-    line-height: 43px;
+    line-height: 42px;
     span{
-        color:#FFFFFF;
+        color: #FFFFFF;
     }
+
 }
 .footer__adres {
-    width: 255.65px;
-    height: 221px;
-    line-height: 32px;
-    font-weight: 600;
-    line-height: 43px;
-    color: #FFFFFF8A;
-
+    max-width: 255px;
+   color: #FFFFFF8A;
     span{
-        font-size: 20px;
-        line-height: 32px;
-        color: #FFFFFF;
+        font-weight: 700;
     }
 }
 .footer__contact {
-    width: 204.64px;
-    height: 221px;
-    font-size: 20px;
     font-weight: 700;
-    line-height: 43px;
-}
 
-.footer__cub{
-   
+}
+.footer__cub {
     font-size: 20px;
+    max-width: 303px;
+    margin: 87px auto;
     font-weight: 700;
-    line-height: 43px;
-    color: #FFFFFF42;
-    margin-bottom: 34px;
+    font-family: "Rubik";
+    color:#FFFFFF42;
 }

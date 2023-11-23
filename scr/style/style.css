@@ -5,7 +5,7 @@ html {
 
 .header {
   height: 80px;
-  background: rgba(14, 20, 31, 0.8784313725);
+  background: #0E141F;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,6 +26,9 @@ html {
   font-weight: 700;
   color: rgba(255, 255, 255, 0.7098039216);
   margin-left: 175px;
+}
+.header__title span {
+  color: rgba(255, 255, 255, 0.7098039216);
 }
 
 .form {
@@ -114,7 +117,7 @@ body {
 }
 
 .welcom {
-  height: 1000px;
+  height: 100vh;
   width: 100%;
   background: url("../images/index/house.png") no-repeat;
   display: -webkit-box;
@@ -657,27 +660,13 @@ body {
 
 .footer {
   width: 100%;
-  height: 456px;
-  margin-top: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-top: 134px;
+  gap: 87px;
 }
 
 .footer__container {
-  margin-top: 55px;
-  width: 1160px;
-  height: 224px;
+  max-width: 1160px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -687,42 +676,30 @@ body {
 }
 
 .footer__menu {
-  width: 209.29px;
-  height: 212px;
-  font-family: Roboto;
   font-size: 20px;
-  line-height: 43px;
+  line-height: 42px;
 }
 .footer__menu span {
   color: #FFFFFF;
 }
 
 .footer__adres {
-  width: 255.65px;
-  height: 221px;
-  line-height: 32px;
-  font-weight: 600;
-  line-height: 43px;
+  max-width: 255px;
   color: rgba(255, 255, 255, 0.5411764706);
 }
 .footer__adres span {
-  font-size: 20px;
-  line-height: 32px;
-  color: #FFFFFF;
+  font-weight: 700;
 }
 
 .footer__contact {
-  width: 204.64px;
-  height: 221px;
-  font-size: 20px;
   font-weight: 700;
-  line-height: 43px;
 }
 
 .footer__cub {
   font-size: 20px;
+  max-width: 303px;
+  margin: 87px auto;
   font-weight: 700;
-  line-height: 43px;
+  font-family: "Rubik";
   color: rgba(255, 255, 255, 0.2588235294);
-  margin-bottom: 34px;
 }
