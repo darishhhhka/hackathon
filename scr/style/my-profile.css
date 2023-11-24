@@ -7,10 +7,19 @@ body {
 body::-webkit-scrollbar {
   width: 0;
 }
+body::-webkit-scrollbar {
+  width: 0;
+}
 
 .header {
   height: 80px;
+<<<<<<< HEAD
   background: #0e141f;
+=======
+  background: #0E141F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 4f18cb38ed4181133fdef0ad73abfd072898cb30
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -207,8 +216,17 @@ body::-webkit-scrollbar {
   margin: 26px 0 36px 0;
   width: 102px;
   display: flex;
+<<<<<<< HEAD
   justify-content: space-between;
   align-self: center;
+=======
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+>>>>>>> 4f18cb38ed4181133fdef0ad73abfd072898cb30
 }
 
 .editing-profile {
@@ -221,6 +239,7 @@ body::-webkit-scrollbar {
   z-index: 1050;
   width: 100%;
   height: 100vh;
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,6 +260,46 @@ body::-webkit-scrollbar {
   color: rgba(20, 25, 35, 0.6196078431);
 }
 .editing-profile textarea::placeholder {
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: auto;
+}
+.editing-profile:target {
+  opacity: 1;
+}
+.editing-profile input {
+  width: 100%;
+  height: 54px;
+  background: #9BA4B5;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+.editing-profile input::-webkit-input-placeholder {
+  font-size: 20px;
+  color: rgba(20, 25, 35, 0.6196078431);
+}
+.editing-profile input::-moz-placeholder {
+  font-size: 20px;
+  color: rgba(20, 25, 35, 0.6196078431);
+}
+.editing-profile input:-ms-input-placeholder {
+  font-size: 20px;
+  color: rgba(20, 25, 35, 0.6196078431);
+}
+.editing-profile input::-ms-input-placeholder {
+  font-size: 20px;
+  color: rgba(20, 25, 35, 0.6196078431);
+}
+.editing-profile input::placeholder {
+>>>>>>> 4f18cb38ed4181133fdef0ad73abfd072898cb30
   font-size: 20px;
   color: rgba(20, 25, 35, 0.6196078431);
 }
@@ -249,6 +308,7 @@ body::-webkit-scrollbar {
   font-size: 32px;
 }
 .editing-profile .editing-profile__content {
+<<<<<<< HEAD
   margin: 30px 50px;
   min-width: 453px;
 }
@@ -266,10 +326,24 @@ body::-webkit-scrollbar {
   content: url("../images/my-profile/dowmload.png");
   position: relative;
   right: -22px;
+=======
+  max-width: 453px;
+}
+.editing-profile .editing-profile__content .editing-profile__about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 28px;
+>>>>>>> 4f18cb38ed4181133fdef0ad73abfd072898cb30
 }
 
 .editing-profile__container {
   background: #141923;
+<<<<<<< HEAD
   height: 90%;
   max-width: 560px;
   box-shadow: 0px 8px 38.7000007629px 10px #0d1118;
@@ -310,3 +384,8 @@ body::-webkit-scrollbar {
   font-size: 20px;
   color: rgba(20, 25, 35, 0.6196078431);
 }/*# sourceMappingURL=my-profile.css.map */
+=======
+  padding: 30px 50px 30px 50px;
+  max-width: 560px;
+}
+>>>>>>> 4f18cb38ed4181133fdef0ad73abfd072898cb30

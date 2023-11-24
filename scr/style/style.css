@@ -6,6 +6,11 @@ html {
 .header {
   height: 80px;
   background: #0E141F;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 4f18cb38ed4181133fdef0ad73abfd072898cb30
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -544,6 +549,11 @@ body {
 .footer__container {
   max-width: 1160px;
   margin: 0 auto;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 4f18cb38ed4181133fdef0ad73abfd072898cb30
   display: flex;
   justify-content: space-between;
 }
@@ -575,4 +585,8 @@ body {
   font-weight: 700;
   font-family: "Rubik";
   color: rgba(255, 255, 255, 0.2588235294);
+<<<<<<< HEAD
 }/*# sourceMappingURL=style.css.map */
+=======
+}
+>>>>>>> 4f18cb38ed4181133fdef0ad73abfd072898cb30
