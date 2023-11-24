@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@400;700&display=swap");
 .header {
   height: 80px;
-  background: rgba(14, 20, 31, 0.8784313725);
+  background: #0E141F;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,6 +23,9 @@
   font-weight: 700;
   color: rgba(255, 255, 255, 0.7098039216);
   margin-left: 175px;
+}
+.header__title span {
+  color: rgba(255, 255, 255, 0.7098039216);
 }
 
 .form {
@@ -93,67 +96,87 @@
 body {
   font-family: "Roboto";
   font-weight: 700;
+  background: url(../images/poster/background.png) no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 
 .poster {
-  background: url("../images/poster/background.png") no-repeat;
-  background-size: cover;
+  padding-top: 80px;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #10151F;
 }
-.poster .slider {
-  width: 1458px;
-  height: 623px;
-  margin: 80px auto;
+
+.slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 27px;
+  max-width: 1458px;
+  max-height: calc(100% - 100px);
+  margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.poster .slider .slider__arrow {
-  width: 119px;
-  height: 91px;
+
+.slider__arrow img {
+  max-width: 60%;
 }
-.poster .slider .content {
+
+.content {
   width: 1166px;
-  height: 623px;
   background: rgba(217, 217, 217, 0.4588235294);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   background: url("../images/poster/figure-1.png") no-repeat bottom 74px right 38.6px, url("../images/poster/figure-2.png") no-repeat bottom 190.01px right 50.54px, url("../images/poster/figure-3.png") no-repeat top 25.61px left 36.61px, rgba(217, 217, 217, 0.4588235294);
+  padding: 25px 25px 100px 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 80px;
 }
-.poster .slider .content .content__date {
-  text-align: right;
+
+.content__date {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   font-size: 36px;
-  margin: 25px 25px 0 0;
 }
-.poster .slider .content .content__info {
-  max-width: 817px;
-  margin: 150px 0 125px 95px;
-}
-.poster .slider .content .content__info .content__title h2 {
-  font-size: 64px;
+
+.content__info {
   font-weight: 700;
-  font-family: "Rubik";
-  color: #10151F;
-  line-height: 76px;
 }
-.poster .slider .content .content__info .content__subtitle {
-  margin-top: 40px;
-  max-width: 682px;
+
+.content__title {
+  font-size: 64px;
+  font-family: "Rubik";
+  max-width: 817px;
+}
+.content__title h2 {
+  font-size: 64px;
+}
+
+.content__subtitle {
   font-size: 32px;
-  line-height: 40px;
   color: rgba(16, 21, 31, 0.6980392157);
+  line-height: 42.14px;
+}
+
+.right {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
 }

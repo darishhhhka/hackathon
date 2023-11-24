@@ -24,6 +24,9 @@
   color: rgba(255, 255, 255, 0.7098039216);
   margin-left: 175px;
 }
+.header__title span {
+  color: rgba(255, 255, 255, 0.7098039216);
+}
 
 .form {
   display: -webkit-box;
@@ -184,6 +187,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   gap: 15px;
 }
 .chat__dialog::-webkit-scrollbar {

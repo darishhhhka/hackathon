@@ -23,6 +23,9 @@
   color: rgba(255, 255, 255, 0.7098039216);
   margin-left: 175px;
 }
+.header__title span {
+  color: rgba(255, 255, 255, 0.7098039216);
+}
 
 .form {
   display: -webkit-box;

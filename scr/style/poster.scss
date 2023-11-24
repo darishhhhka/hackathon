@@ -3,7 +3,7 @@
 
 .header {
     height: 80px;
-    background: #0E141FE0;
+    background: #0E141F;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,6 +14,9 @@
     z-index: 1;
 }
 .header__title {
+    span{
+        color: #FFFFFFB5;
+    }
     font-size: 32px;
     font-weight: 700;
     color: #FFFFFFB5;
@@ -76,73 +79,143 @@
 body{
     font-family: "Roboto";
     font-weight: 700;
-}
-
-
-.poster{
-    background: url("../images/poster/background.png") no-repeat;
+    background: url(../images/poster/background.png) no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100%;
+}
+
+.poster {
+    padding-top: 80px;
+    width: 100%;
+    height: 100vh;
+    font-weight: 700;
     display: flex;
     align-items: center;
-    color: #10151F;
-    
-    .slider {
-        width: 1458px;
-        height: 623px;
-        margin: 80px auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+}
+.slider {
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+    max-width: 1458px;
+    max-height: calc(100% - 100px);
+    margin: 0 auto;
+    align-items: center;
+}
+.slider__arrow {
+    img{
+        max-width: 60%;
 
-        .slider__arrow{
-            width: 119px;
-            height: 91px;
-        }
-    
-        .content {
-            width: 1166px;
-            height: 623px;
-            background: #D9D9D975;
-            backdrop-filter: blur(20px);
-
-            background: url("../images/poster/figure-1.png") no-repeat bottom 74px right 38.6px, url("../images/poster/figure-2.png") no-repeat bottom 190.01px right 50.54px,
-                        url("../images/poster/figure-3.png") no-repeat top 25.61px left 36.61px, #D9D9D975;
-                        ;
-
-            .content__date {
-                text-align: right; 
-                font-size: 36px;
-                margin: 25px 25px 0 0;
-            }
-
-            .content__info{
-                max-width: 817px;
-                margin: 150px 0 125px 95px;
-
-                .content__title {
-
-                    
-                    
-                    h2{
-                        font-size: 64px;
-                        font-weight: 700;
-                        font-family: "Rubik";
-                        color: #10151F;
-                        line-height: 76px;
-                    }
-
-                }
-
-                .content__subtitle {
-                    margin-top: 40px;
-                    max-width: 682px;
-                    font-size: 32px;
-                    line-height: 40px;
-                    color: #10151FB2;
-                }
-            }
-        }
     }
 }
+.content {
+    width: 1166px;
+
+    background: #D9D9D975;
+    backdrop-filter: blur(20px);
+    background: url("../images/poster/figure-1.png") no-repeat bottom 74px right 38.6px, url("../images/poster/figure-2.png") no-repeat bottom 190.01px right 50.54px,
+                url("../images/poster/figure-3.png") no-repeat top 25.61px left 36.61px, #D9D9D975;
+    padding: 25px 25px 100px 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.content__date {
+    align-self: flex-end;
+    font-size: 36px;
+   
+}
+.content__info {
+    // margin-top: 120px;
+    font-weight: 700;
+}
+.content__title {
+    font-size: 64px;
+    font-family: "Rubik";
+    max-width: 817px;
+    h2{
+        font-size: 64px;
+    }
+}
+.content__subtitle {
+    font-size: 32px;
+    color: #10151FB2;
+    line-height: 42.14px;
+}
+
+.right{
+    transform: scale(-1, 1);
+}
+
+
+
+// .poster{
+//     background: url("../images/poster/background.png") no-repeat;
+//     background-size: cover;
+//     width: 100%;
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     color: #10151F;
+    
+//     .slider {
+//         max-width: 1458px;
+//         max-height: 623px;
+//         // margin: 80px auto;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+
+//         .slider__arrow{
+//             max-width: 119px;
+//             max-height: 91px;
+//         }
+    
+//         .content {
+//             max-width: 1166px;
+//             max-height: 623px;
+//             padding: 25px 25px 125px 95px;
+//             display: flex;
+//             flex-direction: column;
+//             background: #D9D9D975;
+//             backdrop-filter: blur(20px);
+
+//             background: url("../images/poster/figure-1.png") no-repeat bottom 74px right 38.6px, url("../images/poster/figure-2.png") no-repeat bottom 190.01px right 50.54px,
+//                         url("../images/poster/figure-3.png") no-repeat top 25.61px left 36.61px, #D9D9D975;
+//                         ;
+
+//             .content__date {
+//                 text-align: right; 
+//                 font-size: 36px;
+//                 margin: 25px 25px 0 0;
+//             }
+
+//             .content__info{
+//                 max-width: 817px;
+//                 margin: 150px 0 125px 0;
+
+//                 .content__title {
+
+                    
+                    
+//                     h2{
+//                         font-size: 64px;
+//                         font-weight: 700;
+//                         font-family: "Rubik";
+//                         color: #10151F;
+//                         line-height: 76px;
+//                     }
+
+//                 }
+
+//                 .content__subtitle {
+//                     margin-top: 40px;
+//                     max-width: 682px;
+//                     font-size: 32px;
+//                     line-height: 40px;
+//                     color: #10151FB2;
+//                 }
+//             }
+//         }
+//     }
+// }

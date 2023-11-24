@@ -2,7 +2,7 @@
 
 .header {
     height: 80px;
-    background: #0E141FE0;
+    background: #141923;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,8 +10,14 @@
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 1;
+    font-family: "Rubik";
+    color: #FFFFFF;
 }
 .header__title {
+    span{
+        color: #FFFFFFB5;
+    }
     font-size: 32px;
     font-weight: 700;
     color: #FFFFFFB5;
@@ -87,6 +93,7 @@ body{
         margin-top: 43px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         .container__title {
             font-size: 64px;
@@ -129,5 +136,90 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+}
+
+
+.upload-a-photo {
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    z-index: 1050;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    color: #FFFFFFCC;
+
+    &:target{
+        opacity: 1;
+        
+    }
+}
+.upload-a-photo__container {
+    min-width: 827px;
+    margin: 0 auto;
+    background: #141923;
+    padding: 50px 75px 50px 75px;
+}
+.upload-a-photo__content {
+    max-width: 674px;
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        font-weight: 700;
+        font-size: 40px;
+        font-family: "Rubik";
+    }
+
+    .upload-a-photo__btn-upload {
+        button{
+
+            margin-top: 72px;
+            width: 255px;
+            height: 43px;
+            align-self: flex-start;
+            background:none;
+            border: 1px solid #FFFFFF;
+            border-radius: 70px;
+            color: #FFFFFFCC;
+            font-family: "Roboto";
+            font-size: 20px;
+        }
+
+        &::after{
+            content: url("../images/my-profile/dowmload.png");
+            position: relative;
+            right: -20px;
+        }
+    }
+
+    textarea{
+        margin-top: 50px;
+        padding: 16px 28px;
+        width: 100%;
+        background: #00000033;
+
+        &::placeholder{
+            font-family: "Roboto";
+            font-size: 14px;
+        }
+    }
+
+    .upload-a-photo__btn-save {
+        margin-top: 33px;
+        width: 168px;
+        height: 60px;
+        align-self: flex-end;
+        background: #6A963E;
+        border-radius: 10px;
+        color: #FFFFFF;
+
+        font-family: "Roboto";
+        font-size: 20px;
     }
 }

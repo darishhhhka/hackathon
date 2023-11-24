@@ -14,6 +14,9 @@
     z-index: 1;
 }
 .header__title {
+    span{
+        color: #FFFFFFB5;
+    }
     font-size: 32px;
     font-weight: 700;
     color: #FFFFFFB5;
@@ -206,19 +209,20 @@ body{
     }
 }
 .chat__input {
-    width: 660px;
-    height: 58px;
-    background: #9BA4B5;
-    position: fixed;
-    bottom: 80px;
-    left: calc(50% - 330px);
-    border-radius: 4px;
-
+    // width: 660px;
+    // height: 58px;
+    // background: #9BA4B5;
+    // 
+    // 
     input{
-        width: calc(100% - 30px);
-        margin-left: 22px;
-        height: 100%;
+        width: 660px;
+        height: 58px;
+        padding-left: 22px;
         background: #9BA4B5;
+        position: fixed;
+        bottom: 80px;
+        border-radius: 4px;
+        left: calc(50% - 330px);
         &::placeholder{
             font-size: 20px;
             color: #1419239E;

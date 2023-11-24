@@ -1,20 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@400;700&display=swap");
 .header {
   height: 80px;
-  background: rgba(14, 20, 31, 0.8784313725);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background: #141923;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 1;
+  font-family: "Rubik";
+  color: #FFFFFF;
 }
 
 .header__title {
@@ -23,15 +20,14 @@
   color: rgba(255, 255, 255, 0.7098039216);
   margin-left: 175px;
 }
+.header__title span {
+  color: rgba(255, 255, 255, 0.7098039216);
+}
 
 .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-right: 181px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .form__search {
@@ -52,8 +48,7 @@
 }
 
 .form__checkbox:checked ~ .menu-list {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   top: 80px;
 }
 
@@ -61,22 +56,13 @@
   position: absolute;
   top: 0;
   right: 0;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
   width: 440px;
   height: 395px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
   padding-left: 50px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, left bottom, left top, from(#141923), to(#141923));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, #141923, #141923);
   font-size: 24px;
   font-weight: 700;
@@ -102,12 +88,9 @@ body {
 }
 .conteiner .container__header {
   margin-top: 43px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
+  align-items: center;
 }
 .conteiner .container__header .container__title {
   font-size: 64px;
@@ -131,14 +114,9 @@ body {
   font-size: 20px;
 }
 .conteiner .photo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .conteiner .photo img {
   margin-top: 43px;
@@ -148,14 +126,86 @@ body {
   position: fixed;
   top: 50%;
   right: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.upload-a-photo {
+  width: 100%;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  opacity: 0;
+  z-index: 1050;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+.upload-a-photo:target {
+  opacity: 1;
+}
+
+.upload-a-photo__container {
+  min-width: 827px;
+  margin: 0 auto;
+  background: #141923;
+  padding: 50px 75px 50px 75px;
+}
+
+.upload-a-photo__content {
+  max-width: 674px;
+  display: flex;
+  flex-direction: column;
+}
+.upload-a-photo__content h2 {
+  font-weight: 700;
+  font-size: 40px;
+  font-family: "Rubik";
+}
+.upload-a-photo__content .upload-a-photo__btn-upload button {
+  margin-top: 72px;
+  width: 255px;
+  height: 43px;
+  align-self: flex-start;
+  background: none;
+  border: 1px solid #FFFFFF;
+  border-radius: 70px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Roboto";
+  font-size: 20px;
+}
+.upload-a-photo__content .upload-a-photo__btn-upload::after {
+  content: url("../images/my-profile/dowmload.png");
+  position: relative;
+  right: -20px;
+}
+.upload-a-photo__content textarea {
+  margin-top: 50px;
+  padding: 16px 28px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.upload-a-photo__content textarea::-moz-placeholder {
+  font-family: "Roboto";
+  font-size: 14px;
+}
+.upload-a-photo__content textarea::placeholder {
+  font-family: "Roboto";
+  font-size: 14px;
+}
+.upload-a-photo__content .upload-a-photo__btn-save {
+  margin-top: 33px;
+  width: 168px;
+  height: 60px;
+  align-self: flex-end;
+  background: #6A963E;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-size: 20px;
+}/*# sourceMappingURL=photo-gallery.css.map */
