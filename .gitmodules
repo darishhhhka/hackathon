@@ -1,0 +1,3 @@
+[submodules "hackathon"]
+    patch = hackathon
+    url = https://github.com/darishhhhka/hackathon.git
