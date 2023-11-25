@@ -3,7 +3,7 @@
 
 .header {
     height: 80px;
-    background: #0E141FE0;
+    background: #0E141F;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -168,7 +168,6 @@ body{
     padding: 0 111px 0 111px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
     gap: 15px;
 }
 .message {
@@ -203,19 +202,16 @@ body{
     }
 }
 .chat__input {
-    width: 660px;
-    height: 58px;
-    background: #9BA4B5;
-    position: fixed;
-    bottom: 80px;
-    left: calc(50% - 330px);
-    border-radius: 4px;
 
     input{
-        width: calc(100% - 30px);
-        margin-left: 22px;
-        height: 100%;
+        width: 660px;
+        height: 58px;
+        padding-left: 22px;
         background: #9BA4B5;
+        position: fixed;
+        bottom: 80px;
+        border-radius: 4px;
+        left: calc(50% - 330px);
         &::placeholder{
             font-size: 20px;
             color: #1419239E;

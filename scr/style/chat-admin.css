@@ -1,16 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@400;700&display=swap");
 .header {
   height: 80px;
-  background: rgba(14, 20, 31, 0.8784313725);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background: #0E141F;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   width: 100%;
   top: 0;
@@ -29,13 +23,9 @@
 }
 
 .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-right: 181px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .form__search {
@@ -56,8 +46,7 @@
 }
 
 .form__checkbox:checked ~ .menu-list {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   top: 80px;
 }
 
@@ -65,22 +54,13 @@
   position: absolute;
   top: 0;
   right: 0;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
   width: 440px;
   height: 395px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
   padding-left: 50px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, left bottom, left top, from(#141923), to(#141923));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, #141923, #141923);
   font-size: 24px;
   font-weight: 700;
@@ -120,23 +100,15 @@ body {
   top: 80px;
   left: 0;
   background: #ACB6CB;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 59px;
   padding-left: 36px;
 }
 .container .chat .chat__header .user {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 25px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .container .chat .chat__header .user .user-name {
   font-family: "Rubik";
@@ -145,12 +117,8 @@ body {
 }
 
 .my-message, .message-forwarded, .message {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  align-items: end;
   gap: 10px;
 }
 .my-message .message__content, .message-forwarded .message__content, .message .message__content {
@@ -180,16 +148,8 @@ body {
   overflow: auto;
   margin-top: 140px;
   padding: 0 111px 0 111px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  flex-direction: column;
   gap: 15px;
 }
 .chat__dialog::-webkit-scrollbar {
@@ -197,8 +157,7 @@ body {
 }
 
 .message-forwarded {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 .message-forwarded::before {
   content: "";
@@ -216,46 +175,28 @@ body {
 }
 
 .my-message {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 .my-message .message__content {
   border-radius: 10px 10px 0 10px;
   background: #324466;
 }
 
-.chat__input {
+.chat__input input {
   width: 660px;
   height: 58px;
+  padding-left: 22px;
   background: #9BA4B5;
   position: fixed;
   bottom: 80px;
-  left: calc(50% - 330px);
   border-radius: 4px;
-}
-.chat__input input {
-  width: calc(100% - 30px);
-  margin-left: 22px;
-  height: 100%;
-  background: #9BA4B5;
-}
-.chat__input input::-webkit-input-placeholder {
-  font-size: 20px;
-  color: rgba(20, 25, 35, 0.6196078431);
+  left: calc(50% - 330px);
 }
 .chat__input input::-moz-placeholder {
-  font-size: 20px;
-  color: rgba(20, 25, 35, 0.6196078431);
-}
-.chat__input input:-ms-input-placeholder {
-  font-size: 20px;
-  color: rgba(20, 25, 35, 0.6196078431);
-}
-.chat__input input::-ms-input-placeholder {
   font-size: 20px;
   color: rgba(20, 25, 35, 0.6196078431);
 }
 .chat__input input::placeholder {
   font-size: 20px;
   color: rgba(20, 25, 35, 0.6196078431);
-}
+}/*# sourceMappingURL=chat-admin.css.map */

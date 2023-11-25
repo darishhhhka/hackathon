@@ -1,16 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@400;700&display=swap");
 .header {
   height: 80px;
-  background: rgba(14, 20, 31, 0.8784313725);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background: #0E141F;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   width: 100%;
   top: 0;
@@ -30,13 +24,9 @@
 }
 
 .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-right: 181px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .form__search {
@@ -57,8 +47,7 @@
 }
 
 .form__checkbox:checked ~ .menu-list {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   top: 80px;
 }
 
@@ -66,22 +55,13 @@
   position: absolute;
   top: 0;
   right: 0;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
   width: 440px;
   height: 395px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
   padding-left: 50px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, left bottom, left top, from(#141923), to(#141923));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, #141923, #141923);
   font-size: 24px;
   font-weight: 700;
@@ -139,19 +119,7 @@
   height: 100%;
   background: #e1e2e8;
 }
-.container .container__search .container__input input::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.5019607843);
-  font-size: 20px;
-}
 .container .container__search .container__input input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.5019607843);
-  font-size: 20px;
-}
-.container .container__search .container__input input:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.5019607843);
-  font-size: 20px;
-}
-.container .container__search .container__input input::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.5019607843);
   font-size: 20px;
 }
@@ -166,14 +134,9 @@
   width: 100%;
   height: 148px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6980392157);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 .container .chat__message .chat__info {
   width: 848px;
@@ -190,4 +153,4 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
+}/*# sourceMappingURL=chats.css.map */

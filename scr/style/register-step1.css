@@ -10,16 +10,10 @@ body {
 
 .header {
   height: 80px;
-  background: rgba(14, 20, 31, 0.8784313725);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background: #0E141F;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   width: 100%;
   top: 0;
@@ -37,13 +31,9 @@ body {
 }
 
 .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-right: 181px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .form__search {
@@ -64,8 +54,7 @@ body {
 }
 
 .form__checkbox:checked ~ .menu-list {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   top: 80px;
 }
 
@@ -73,22 +62,13 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
   width: 440px;
   height: 395px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
   padding-left: 50px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, left bottom, left top, from(#141923), to(#141923));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, #141923, #141923);
   font-size: 24px;
   font-weight: 700;
@@ -104,44 +84,24 @@ body {
 .register {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
 .regicter__form {
   width: 375px;
   height: 446px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding-top: 126px;
 }
 .regicter__form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .regicter__form h2 {
   font-size: 40px;
@@ -160,19 +120,7 @@ body {
   background: #9BA4B5;
   margin-left: 13px;
 }
-.regicter__form .input input::-webkit-input-placeholder {
-  color: rgba(20, 25, 35, 0.6196078431);
-  font-size: 20px;
-}
 .regicter__form .input input::-moz-placeholder {
-  color: rgba(20, 25, 35, 0.6196078431);
-  font-size: 20px;
-}
-.regicter__form .input input:-ms-input-placeholder {
-  color: rgba(20, 25, 35, 0.6196078431);
-  font-size: 20px;
-}
-.regicter__form .input input::-ms-input-placeholder {
   color: rgba(20, 25, 35, 0.6196078431);
   font-size: 20px;
 }
@@ -207,4 +155,4 @@ body {
   font-size: 20px;
   line-height: 26px;
   color: #FFFFFF;
-}
+}/*# sourceMappingURL=register-step1.css.map */
